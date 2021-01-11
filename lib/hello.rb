@@ -13,4 +13,8 @@ def hello_t(array)
 end
 
 
-hello_t(["Tom", "John", "Wop"])
+hello_t(["Tom", "John", "Wop"]) do |name|
+  if name.start_with?("J")
+    puts "Hello #{name}"
+  end
+end
